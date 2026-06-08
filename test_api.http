@@ -1,0 +1,233 @@
+@baseUrl = http://localhost:8080/api
+@email = jean.dupont@example.com
+@password = password123
+@token = {{login.response.body.$.token}}
+@userId = 1
+@memberId = 2
+@projetId = 1
+@colonneId = 1
+@tacheId = 1
+
+### 0. Demarrer l'application avant les tests
+# Dans un terminal:
+# .\mvnw.cmd spring-boot:run
+#
+# Ordre conseille:
+# 1) Register
+# 2) Login
+# 3) Tester les routes protegees: @token est rempli automatiquement depuis login
+# Si Register dit "Email deja utilise", lance directement Login.
+
+### AUTH - Register
+POST {{baseUrl}}/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "nom": "Dupont",
+  "prenom": "Jean",
+  "email": "{{email}}",
+  "motDePasse": "{{password}}",
+  "role": "CHEF_PROJET"
+}
+
+### AUTH - Login
+# @name login
+POST {{baseUrl}}/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "motDePasse": "{{password}}"
+}
+
+### UTILISATEURS - Moi
+GET {{baseUrl}}/utilisateurs/moi HTTP/1.1
+Authorization: Bearer {{token}}
+
+### UTILISATEURS - Tous
+GET {{baseUrl}}/utilisateurs HTTP/1.1
+Authorization: Bearer {{token}}
+
+### UTILISATEURS - Par ID
+GET {{baseUrl}}/utilisateurs/{{userId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### UTILISATEURS - Modifier profil
+PUT {{baseUrl}}/utilisateurs/{{userId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "nom": "Dupont",
+  "prenom": "Jean Modifie",
+  "email": "{{email}}",
+  "avatar": "https://example.com/avatar.png"
+}
+
+### UTILISATEURS - Changer role
+PATCH {{baseUrl}}/utilisateurs/{{userId}}/role?role=ADMIN HTTP/1.1
+Authorization: Bearer {{token}}
+
+### UTILISATEURS - Changer mot de passe
+PATCH {{baseUrl}}/utilisateurs/{{userId}}/mot-de-passe HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "ancienMotDePasse": "{{password}}",
+  "nouveauMotDePasse": "password456"
+}
+
+### PROJETS - Creer
+POST {{baseUrl}}/projets HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "titre": "Mini Trello API",
+  "description": "Projet cree depuis REST Client",
+  "dateDebut": "2026-05-11",
+  "dateFin": "2026-12-31"
+}
+
+### PROJETS - Mes projets
+GET {{baseUrl}}/projets HTTP/1.1
+Authorization: Bearer {{token}}
+
+### PROJETS - Tous mes projets proprietaire + membre
+GET {{baseUrl}}/projets/tous HTTP/1.1
+Authorization: Bearer {{token}}
+
+### PROJETS - Par ID
+GET {{baseUrl}}/projets/{{projetId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### PROJETS - Modifier
+PUT {{baseUrl}}/projets/{{projetId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "titre": "Mini Trello API modifie",
+  "description": "Description modifiee depuis REST Client",
+  "dateDebut": "2026-05-11",
+  "dateFin": "2026-11-30"
+}
+
+### PROJETS - Ajouter membre
+POST {{baseUrl}}/projets/{{projetId}}/membres/{{memberId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### COLONNES - Creer
+POST {{baseUrl}}/colonnes/{{projetId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "nom": "A faire",
+  "couleur": "#0052CC",
+  "position": 1
+}
+
+### COLONNES - Par projet
+GET {{baseUrl}}/colonnes/projet/{{projetId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### COLONNES - Par ID
+GET {{baseUrl}}/colonnes/{{colonneId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### COLONNES - Modifier
+PUT {{baseUrl}}/colonnes/{{colonneId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "nom": "En cours",
+  "couleur": "#FFAB00",
+  "position": 2
+}
+
+### COLONNES - Reorganiser
+POST {{baseUrl}}/colonnes/{{projetId}}/reorganiser HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {{colonneId}}
+]
+
+### TACHES - Creer
+POST {{baseUrl}}/taches/{{colonneId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "titre": "Tester les endpoints",
+  "description": "Tester l'API avec un fichier .http",
+  "priorite": "HAUTE",
+  "dateEcheance": "2026-05-20",
+  "position": 1
+}
+
+### TACHES - Par colonne
+GET {{baseUrl}}/taches/colonne/{{colonneId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### TACHES - Par ID
+GET {{baseUrl}}/taches/{{tacheId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### TACHES - Mes taches
+GET {{baseUrl}}/taches/mes-taches HTTP/1.1
+Authorization: Bearer {{token}}
+
+### TACHES - Assignees a un utilisateur
+GET {{baseUrl}}/taches/assignees/{{userId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### TACHES - Modifier
+PUT {{baseUrl}}/taches/{{tacheId}} HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "titre": "Tester les endpoints modifies",
+  "description": "Verification PUT depuis REST Client",
+  "priorite": "URGENTE",
+  "dateEcheance": "2026-05-25",
+  "position": 1
+}
+
+### TACHES - Deplacer vers une colonne
+PATCH {{baseUrl}}/taches/{{tacheId}}/deplacer?colonneId={{colonneId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### TACHES - Reorganiser
+POST {{baseUrl}}/taches/{{colonneId}}/reorganiser HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+[
+  {{tacheId}}
+]
+
+### TACHES - Ajouter assigne
+POST {{baseUrl}}/taches/{{tacheId}}/assignes/{{userId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### TACHES - Supprimer
+DELETE {{baseUrl}}/taches/{{tacheId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### COLONNES - Supprimer
+DELETE {{baseUrl}}/colonnes/{{colonneId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### PROJETS - Supprimer
+DELETE {{baseUrl}}/projets/{{projetId}} HTTP/1.1
+Authorization: Bearer {{token}}
+
+### UTILISATEURS - Supprimer
+DELETE {{baseUrl}}/utilisateurs/{{userId}} HTTP/1.1
+Authorization: Bearer {{token}}

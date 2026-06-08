@@ -1,0 +1,378 @@
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml
+Progress (1): 398 BProgress (2): 398 B | 249 BProgress (3): 398 B | 249 B | 255 BProgress (4): 398 B | 249 B | 255 B | 234 B                                           Downloaded from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml (255 B at 186 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml (398 B at 290 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml (234 B at 169 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml (249 B at 180 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Progress (1): 394 BProgress (2): 394 B | 4.6 kBProgress (2): 394 B | 9.7 kBProgress (2): 394 B | 14 kB Progress (3): 394 B | 14 kB | 242 BProgress (4): 394 B | 14 kB | 242 B | 375 B                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml (394 B at 3.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml (242 B at 2.2 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 130 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml (375 B at 2.6 kB/s)
+Progress (1): 3.1 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 17 kBProgress (1): 20 kBProgress (1): 21 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 95 kB/s)
+[INFO] 
+[INFO] -----------------------< org.minitrello:backend >-----------------------
+[INFO] Building minitrello 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ backend ---
+[INFO] skip non existing resourceDirectory C:\Users\BAB AL SAFA\Downloads\backend_mydblink\minitrello\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-05-12T00:19:50.971+01:00  INFO 23748 --- [mini-trello] [           main] o.m.backend.MinitrelloApplication        : Starting MinitrelloApplication using Java 17.0.18 with PID 23748 (C:\Users\BAB AL SAFA\Downloads\backend_mydblink\minitrello\target\classes started by BAB AL SAFA in C:\Users\BAB AL SAFA\Downloads\backend_mydblink\minitrello)
+2026-05-12T00:19:50.979+01:00  INFO 23748 --- [mini-trello] [           main] o.m.backend.MinitrelloApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-05-12T00:19:54.203+01:00  INFO 23748 --- [mini-trello] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12T00:19:54.459+01:00  INFO 23748 --- [mini-trello] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 5 JPA repository interfaces.
+2026-05-12T00:19:56.981+01:00  INFO 23748 --- [mini-trello] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-12T00:19:57.033+01:00  INFO 23748 --- [mini-trello] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-12T00:19:57.036+01:00  INFO 23748 --- [mini-trello] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-12T00:19:57.303+01:00  INFO 23748 --- [mini-trello] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-12T00:19:57.312+01:00  INFO 23748 --- [mini-trello] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6169 ms
+2026-05-12T00:19:57.815+01:00  INFO 23748 --- [mini-trello] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-12T00:19:58.067+01:00  INFO 23748 --- [mini-trello] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-12T00:19:58.188+01:00  INFO 23748 --- [mini-trello] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-12T00:19:59.017+01:00  INFO 23748 --- [mini-trello] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12T00:19:59.153+01:00  INFO 23748 --- [mini-trello] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-12T00:19:59.978+01:00  INFO 23748 --- [mini-trello] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49631cfb
+2026-05-12T00:19:59.984+01:00  INFO 23748 --- [mini-trello] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-12T00:20:00.131+01:00  WARN 23748 --- [mini-trello] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-12T00:20:04.613+01:00  INFO 23748 --- [mini-trello] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12T00:20:05.170+01:00  INFO 23748 --- [mini-trello] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T00:20:06.716+01:00  INFO 23748 --- [mini-trello] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-12T00:20:09.977+01:00  INFO 23748 --- [mini-trello] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53785d1a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75d454a4, org.springframework.security.web.context.SecurityContextHolderFilter@796affb8, org.springframework.security.web.header.HeaderWriterFilter@81ac569, org.springframework.web.filter.CorsFilter@42cf08a1, org.springframework.security.web.authentication.logout.LogoutFilter@6f014f27, org.minitrello.backend.security.JwtAuthenticationFilter@11ec2b2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@784dd9da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6be93728, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46092840, org.springframework.security.web.session.SessionManagementFilter@49bcd90d, org.springframework.security.web.access.ExceptionTranslationFilter@420dee82, org.springframework.security.web.access.intercept.AuthorizationFilter@24c04958]
+2026-05-12T00:20:11.276+01:00  INFO 23748 --- [mini-trello] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-05-12T00:20:11.322+01:00  INFO 23748 --- [mini-trello] [           main] o.m.backend.MinitrelloApplication        : Started MinitrelloApplication in 21.824 seconds (process running for 22.963)
+2026-05-12T00:20:28.008+01:00  INFO 23748 --- [mini-trello] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-12T00:20:28.010+01:00  INFO 23748 --- [mini-trello] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-12T00:20:28.014+01:00  INFO 23748 --- [mini-trello] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into utilisateurs (avatar,date_creation,email,mot_de_passe,nom,prenom,role) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into utilisateurs (avatar,date_creation,email,mot_de_passe,nom,prenom,role) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: insert into projets (date_creation,date_debut,date_fin,description,proprietaire_id,titre) values (?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: insert into membres_projet (projet_id,utilisateur_id) values (?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select c1_0.id from colonnes c1_0 where c1_0.nom=? and c1_0.projet_id=? fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: insert into colonnes (couleur,nom,position,projet_id) values (?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select c1_0.id from colonnes c1_0 where c1_0.nom=? and c1_0.projet_id=? fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: insert into colonnes (couleur,nom,position,projet_id) values (?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: insert into taches (colonne_id,date_creation,date_echeance,description,position,priorite,titre) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where ? in (select a1_0.utilisateur_id from tache_assignees a1_0 where t1_0.id=a1_0.tache_id)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where ? in (select a1_0.utilisateur_id from tache_assignees a1_0 where t1_0.id=a1_0.tache_id)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: update taches set colonne_id=?,date_echeance=?,description=?,position=?,priorite=?,titre=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: update taches set colonne_id=?,date_echeance=?,description=?,position=?,priorite=?,titre=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select a1_0.tache_id,a1_1.id,a1_1.avatar,a1_1.date_creation,a1_1.email,a1_1.mot_de_passe,a1_1.nom,a1_1.prenom,a1_1.role from tache_assignees a1_0 join utilisateurs a1_1 on a1_1.id=a1_0.utilisateur_id where a1_0.tache_id=?
+Hibernate: insert into tache_assignees (tache_id,utilisateur_id) values (?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select c1_0.tache_id,c1_0.id,c1_0.auteur_id,c1_0.contenu,c1_0.date_creation,c1_0.date_modification from commentaires c1_0 where c1_0.tache_id=?
+Hibernate: delete from tache_assignees where tache_id=?
+Hibernate: delete from taches where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: delete from membres_projet where projet_id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.colonne_id,t1_0.id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: delete from colonnes where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.colonne_id,t1_0.id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: delete from colonnes where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select count(*) from projets p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: delete from projets where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select count(*) from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: delete from utilisateurs where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select count(*) from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: delete from utilisateurs where id=?
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into utilisateurs (avatar,date_creation,email,mot_de_passe,nom,prenom,role) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into utilisateurs (avatar,date_creation,email,mot_de_passe,nom,prenom,role) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: update utilisateurs set avatar=?,email=?,mot_de_passe=?,nom=?,prenom=?,role=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: update utilisateurs set avatar=?,email=?,mot_de_passe=?,nom=?,prenom=?,role=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: update utilisateurs set avatar=?,email=?,mot_de_passe=?,nom=?,prenom=?,role=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: insert into projets (date_creation,date_debut,date_fin,description,proprietaire_id,titre) values (?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select distinct p1_0.id,c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id left join colonnes c1_0 on p1_0.id=c1_0.projet_id where p2_0.id=? or ? in (select m1_0.utilisateur_id from membres_projet m1_0 where p1_0.id=m1_0.projet_id) order by c1_0.position
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select distinct p1_0.id,c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id left join colonnes c1_0 on p1_0.id=c1_0.projet_id where p2_0.id=? or ? in (select m1_0.utilisateur_id from membres_projet m1_0 where p1_0.id=m1_0.projet_id) order by c1_0.position
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select distinct p1_0.id,c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id left join colonnes c1_0 on p1_0.id=c1_0.projet_id order by c1_0.position
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select distinct p1_0.id,c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id left join colonnes c1_0 on p1_0.id=c1_0.projet_id where p1_0.id=? order by c1_0.position
+Hibernate: select m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role from membres_projet m1_0 join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id where m1_0.projet_id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: update projets set date_debut=?,date_fin=?,description=?,proprietaire_id=?,titre=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: insert into membres_projet (projet_id,utilisateur_id) values (?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select c1_0.id from colonnes c1_0 where c1_0.nom=? and c1_0.projet_id=? fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: insert into colonnes (couleur,nom,position,projet_id) values (?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select c1_0.id from colonnes c1_0 where c1_0.nom=? and c1_0.projet_id=? fetch first ? rows only
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: insert into colonnes (couleur,nom,position,projet_id) values (?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: update colonnes set couleur=?,nom=?,position=?,projet_id=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: insert into taches (colonne_id,date_creation,date_echeance,description,position,priorite,titre) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where ? in (select a1_0.utilisateur_id from tache_assignees a1_0 where t1_0.id=a1_0.tache_id)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where ? in (select a1_0.utilisateur_id from tache_assignees a1_0 where t1_0.id=a1_0.tache_id)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: update taches set colonne_id=?,date_echeance=?,description=?,position=?,priorite=?,titre=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: update taches set colonne_id=?,date_echeance=?,description=?,position=?,priorite=?,titre=? where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select a1_0.tache_id,a1_1.id,a1_1.avatar,a1_1.date_creation,a1_1.email,a1_1.mot_de_passe,a1_1.nom,a1_1.prenom,a1_1.role from tache_assignees a1_0 join utilisateurs a1_1 on a1_1.id=a1_0.utilisateur_id where a1_0.tache_id=?
+Hibernate: insert into tache_assignees (tache_id,utilisateur_id) values (?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.colonne_id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.id=?
+Hibernate: select c1_0.tache_id,c1_0.id,c1_0.auteur_id,c1_0.contenu,c1_0.date_creation,c1_0.date_modification from commentaires c1_0 where c1_0.tache_id=?
+Hibernate: delete from tache_assignees where tache_id=?
+Hibernate: delete from taches where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: delete from membres_projet where projet_id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.colonne_id,t1_0.id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: delete from colonnes where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position,c1_0.projet_id from colonnes c1_0 where c1_0.id=?
+Hibernate: select t1_0.colonne_id,t1_0.id,t1_0.date_creation,t1_0.date_echeance,t1_0.description,t1_0.position,t1_0.priorite,t1_0.titre from taches t1_0 where t1_0.colonne_id=? order by t1_0.position
+Hibernate: delete from colonnes where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select count(*) from projets p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.date_creation,p1_0.date_debut,p1_0.date_fin,p1_0.description,m1_0.projet_id,m1_1.id,m1_1.avatar,m1_1.date_creation,m1_1.email,m1_1.mot_de_passe,m1_1.nom,m1_1.prenom,m1_1.role,p1_0.proprietaire_id,p2_0.id,p2_0.avatar,p2_0.date_creation,p2_0.email,p2_0.mot_de_passe,p2_0.nom,p2_0.prenom,p2_0.role,p1_0.titre from projets p1_0 left join membres_projet m1_0 on p1_0.id=m1_0.projet_id left join utilisateurs m1_1 on m1_1.id=m1_0.utilisateur_id join utilisateurs p2_0 on p2_0.id=p1_0.proprietaire_id where p1_0.id=?
+Hibernate: select c1_0.projet_id,c1_0.id,c1_0.couleur,c1_0.nom,c1_0.position from colonnes c1_0 where c1_0.projet_id=? order by c1_0.position
+Hibernate: delete from projets where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select count(*) from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: delete from utilisateurs where id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select count(*) from utilisateurs u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.id=?
+Hibernate: delete from utilisateurs where id=?
+2026-05-12T02:06:13.091+01:00  INFO 23748 --- [mini-trello] [nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1793 ms
+2026-05-12T03:05:01.127+01:00  WARN 23748 --- [mini-trello] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m58s390ms742탎800ns).
+2026-05-12T06:51:19.188+01:00  WARN 23748 --- [mini-trello] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m14s750ms945탎900ns).
+2026-05-12T18:12:54.805+01:00  WARN 23748 --- [mini-trello] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h21m44s699ms247탎500ns).
+2026-05-12T19:59:29.988+01:00  WARN 23748 --- [mini-trello] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s552ms780탎300ns).
+2026-05-12T21:00:20.627+01:00  WARN 23748 --- [mini-trello] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m50s123ms72탎500ns).
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into utilisateurs (avatar,date_creation,email,mot_de_passe,nom,prenom,role) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: select u1_0.id from utilisateurs u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into utilisateurs (avatar,date_creation,email,mot_de_passe,nom,prenom,role) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.avatar,u1_0.date_creation,u1_0.email,u1_0.mot_de_passe,u1_0.nom,u1_0.prenom,u1_0.role from utilisateurs u1_0 where u1_0.email=?
