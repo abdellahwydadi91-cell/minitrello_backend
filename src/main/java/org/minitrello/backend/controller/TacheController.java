@@ -84,10 +84,19 @@ public class TacheController {
         );
     }
 
-    // GET /api/taches/{id}
+    // ✅ GET /api/taches/{id} - AVEC VÉRIFICATION D'ACCÈS
     @GetMapping("/{id}")
     public ResponseEntity<TacheDTO> getById(@PathVariable Long id) {
-        return tacheService.obtenirTacheParId(id)
+        // Récupérer l'email de l'utilisateur connecté
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        // Vérifier l'accès à la tâche
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
+        return tacheService.obtenirTacheParIdAvecRelations(id)
                 .map(this::toDTO)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
@@ -130,12 +139,28 @@ public class TacheController {
     @PutMapping("/{id}")
     public ResponseEntity<TacheDTO> modifier(@PathVariable Long id,
                                              @RequestBody Tache tache) {
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        // Vérifier l'accès avant modification
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         return ResponseEntity.ok(toDTO(tacheService.mettreAJourTache(id, tache)));
     }
 
     // DELETE /api/taches/{id}
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> supprimer(@PathVariable Long id) {
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        // Vérifier l'accès avant suppression
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         tacheService.supprimerTache(id);
         return ResponseEntity.noContent().build();
     }
@@ -144,6 +169,13 @@ public class TacheController {
     @PatchMapping("/{id}/deplacer")
     public ResponseEntity<TacheDTO> deplacer(@PathVariable Long id,
                                              @RequestParam Long colonneId) {
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         return ResponseEntity.ok(toDTO(tacheService.deplacerTache(id, colonneId)));
     }
 
@@ -155,10 +187,18 @@ public class TacheController {
         return ResponseEntity.ok().build();
     }
 
-    // POST /api/taches/{id}/assignes/{assigneId}
+    // ✅ POST /api/taches/{id}/assignes/{assigneId} - AVEC VÉRIFICATION
     @PostMapping("/{id}/assignes/{assigneId}")
     public ResponseEntity<TacheDTO> ajouterAssigne(@PathVariable Long id,
                                                    @PathVariable Long assigneId) {
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        // Vérifier l'accès avant assignation
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         return ResponseEntity.ok(toDTO(tacheService.ajouterAssigne(id, assigneId)));
     }
 
@@ -166,6 +206,13 @@ public class TacheController {
     @DeleteMapping("/{id}/assignes/{assigneId}")
     public ResponseEntity<TacheDTO> retirerAssigne(@PathVariable Long id,
                                                    @PathVariable Long assigneId) {
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         return ResponseEntity.ok(toDTO(tacheService.retirerAssigne(id, assigneId)));
     }
 
@@ -174,6 +221,13 @@ public class TacheController {
     @org.springframework.transaction.annotation.Transactional
     public ResponseEntity<TacheDTO> changerStatut(@PathVariable Long id,
                                                   @RequestParam String statut) {
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         Tache tache = tacheService.obtenirTacheParIdAvecRelations(id)
                 .orElseThrow(() -> new RuntimeException("Tâche non trouvée"));
         tache.setStatut(StatutTache.valueOf(statut));
@@ -192,6 +246,13 @@ public class TacheController {
             @PathVariable Long id,
             @RequestParam(value = "image", required = false) MultipartFile file) {
 
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         if (file == null || file.isEmpty()) {
             throw new RuntimeException("Aucune image fournie");
         }
@@ -206,21 +267,25 @@ public class TacheController {
             @PathVariable Long id,
             @RequestBody Map<String, String> request) {
 
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         String base64Image = request.get("image");
         if (base64Image == null || base64Image.isEmpty()) {
             throw new RuntimeException("Aucune image fournie");
         }
 
         try {
-            // Supprimer le préfixe data:image/png;base64, si présent
             if (base64Image.contains(",")) {
                 base64Image = base64Image.split(",")[1];
             }
 
-            // Décoder le base64
             byte[] imageBytes = Base64.getDecoder().decode(base64Image);
 
-            // Créer un MultipartFile à partir du base64
             MultipartFile file = new MockMultipartFile(
                     "image",
                     "image.png",
@@ -241,6 +306,14 @@ public class TacheController {
     public ResponseEntity<TacheDTO> deleteImage(
             @PathVariable Long id,
             @PathVariable int imageIndex) {
+
+        String email = SecurityContextHolder.getContext()
+                .getAuthentication().getName();
+
+        if (!tacheService.verifierAccesTache(id, email)) {
+            return ResponseEntity.status(403).build();
+        }
+
         Tache updatedTache = tacheService.deleteImage(id, imageIndex);
         return ResponseEntity.ok(toDTO(updatedTache));
     }

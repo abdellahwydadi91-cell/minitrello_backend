@@ -39,12 +39,15 @@ public interface TacheRepository extends JpaRepository<Tache, Long> {
 
     List<Tache> findByTitreContainingIgnoreCase(String titre);
 
-    // ✅ CORRECTION : Ajouter LEFT JOIN FETCH t.imageUrls
+    // ✅ CORRECTION : Pas de fetch des images ici
     @Query("SELECT t FROM Tache t " +
             "LEFT JOIN FETCH t.colonne c " +
             "LEFT JOIN FETCH c.projet " +
             "LEFT JOIN FETCH t.assignes " +
-            "LEFT JOIN FETCH t.imageUrls " +  // ← AJOUTER CETTE LIGNE
             "WHERE t.id = :id")
     Optional<Tache> findByIdWithColonneAndProjet(@Param("id") Long id);
+
+    // ✅ NOUVEAU : Récupérer uniquement les URLs des images
+    @Query("SELECT t.imageUrls FROM Tache t WHERE t.id = :id")
+    List<String> findImageUrlsByTacheId(@Param("id") Long id);
 }

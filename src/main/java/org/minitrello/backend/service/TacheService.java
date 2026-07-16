@@ -75,6 +75,33 @@ public class TacheService {
         return projet.getMembres().contains(utilisateur);
     }
 
+    // ✅ NOUVELLE MÉTHODE : Vérifier si un utilisateur a accès à une tâche
+    public boolean verifierAccesTache(Long tacheId, String email) {
+        Optional<Tache> tacheOpt = tacheRepository.findByIdWithColonneAndProjet(tacheId);
+        if (tacheOpt.isEmpty()) return false;
+
+        Tache tache = tacheOpt.get();
+        Optional<Utilisateur> utilisateurOpt = utilisateurRepository.findByEmail(email);
+        if (utilisateurOpt.isEmpty()) return false;
+
+        Utilisateur utilisateur = utilisateurOpt.get();
+        Projet projet = tache.getColonne().getProjet();
+
+        // Le propriétaire a toujours accès
+        if (projet.getProprietaire() != null &&
+                projet.getProprietaire().getId().equals(utilisateur.getId())) {
+            return true;
+        }
+
+        // Les membres ont accès
+        if (projet.getMembres() != null) {
+            return projet.getMembres().stream()
+                    .anyMatch(m -> m.getId().equals(utilisateur.getId()));
+        }
+
+        return false;
+    }
+
     @Transactional(readOnly = true)
     public Optional<Tache> obtenirTacheParId(Long id) {
         return tacheRepository.findById(id);
@@ -190,13 +217,11 @@ public class TacheService {
                 .orElseThrow(() -> new RuntimeException("Tâche non trouvée avec l'id: " + tacheId));
 
         try {
-            // Créer le dossier si nécessaire
             Path uploadPath = Paths.get(uploadDir);
             if (!Files.exists(uploadPath)) {
                 Files.createDirectories(uploadPath);
             }
 
-            // Valider le fichier
             if (file.isEmpty()) {
                 throw new RuntimeException("Le fichier est vide");
             }
@@ -206,25 +231,20 @@ public class TacheService {
                 throw new RuntimeException("Seules les images sont acceptées");
             }
 
-            // Générer un nom unique pour l'image
             String originalFilename = file.getOriginalFilename();
             String extension = originalFilename != null && originalFilename.contains(".")
                     ? originalFilename.substring(originalFilename.lastIndexOf("."))
                     : ".jpg";
             String fileName = UUID.randomUUID().toString() + extension;
 
-            // Sauvegarder l'image
             Path filePath = uploadPath.resolve(fileName);
             Files.copy(file.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
 
-            // URL accessible pour le frontend
             String imageUrl = "/uploads/taches/" + fileName;
             tache.getImageUrls().add(imageUrl);
 
-            // Sauvegarder la tâche
             tacheRepository.save(tache);
 
-            // ✅ CORRECTION IMPORTANTE : Recharger la tâche avec toutes ses relations
             return tacheRepository.findByIdWithColonneAndProjet(tacheId)
                     .orElseThrow(() -> new RuntimeException("Tâche non trouvée après upload"));
 
@@ -240,7 +260,6 @@ public class TacheService {
         if (imageIndex >= 0 && imageIndex < tache.getImageUrls().size()) {
             String imageUrl = tache.getImageUrls().remove(imageIndex);
 
-            // Supprimer physiquement le fichier
             try {
                 String fileName = Paths.get(imageUrl).getFileName().toString();
                 Path filePath = Paths.get(uploadDir, fileName);
@@ -252,7 +271,6 @@ public class TacheService {
 
         Tache savedTache = tacheRepository.save(tache);
 
-        // ✅ Recharger la tâche avec toutes ses relations
         return tacheRepository.findByIdWithColonneAndProjet(tacheId)
                 .orElseThrow(() -> new RuntimeException("Tâche non trouvée après suppression"));
     }
